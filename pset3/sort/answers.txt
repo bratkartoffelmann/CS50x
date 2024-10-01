@@ -1,0 +1,45 @@
+sort1 uses: Bubble Sort
+
+How do you know?: 
+- Worst case: O(n^2)
+- Best case: Ω(n)
+- Bubble sort involves comparing and potentially swapping two adjacent elements. If the elements are in the correct order, it then moves to the next pair. 
+  As sorted.txt is already in ascending order, the time taken is significantly shorter for sorted.txt than for reversed.txt.
+
+-----
+
+sort2 uses: Merge Sort
+
+How do you know?: 
+- Complexity: Θ(n log n) = O(n log n) == Ω(n log n)
+- Merge Sort is to divide the data-set into smaller data-sets, sort those smaller data-sets and then join them (merge them) together. This makes Merge Sort more efficient than Bubble Sort and Selection Sort.
+  The time to run the files are similar, and consistently lower than the other 2 sorting algorithms. 
+
+-----
+
+sort3 uses: Selection Sort
+
+How do you know?: 
+- Worst case: O(n^2)
+- Best case: Ω(n)
+- Selection sort involves finding the smallest element in the list and swapping it with the first element in the unsorted portion of the list.
+  Regardless if the array is sorted, this algorithm will still iterate through the entire array and sort accordingly. Hence, the time taken should be somewhat comparable. 
+
+-----
+
+# Time for sort algorithms to run:
+
+## sorted50000.txt
+sort1: 0m1.380s
+sort2: 0m1.282s
+sort3: 0m2.827s
+
+## reversed50000.txt
+sort1: 0m5.161s
+sort2: 0m1.325s
+sort3: 0m3.257s
+
+## random50000.txt
+sort1: 0m6.047s
+sort2: 0m1.326s
+sort3: 0m3.085s
